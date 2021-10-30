@@ -1,12 +1,3 @@
-//Test function: compares the two values and tells if they match or not.
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 // Given array of strings allItems that we need to look through, and object itemsToCount,
 // returns new obj with string as key and as value - counts of each string were found in array
 const countOnly = (allItems, itemsToCount) => {
@@ -23,6 +14,14 @@ const countOnly = (allItems, itemsToCount) => {
   return results;
 };
 
+//Test function: compares the two values and tells if they match or not.
+const assertEqual = (actual, expected) => {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
 
 //Test case
 // only keys which have a truthy value should be counted;
