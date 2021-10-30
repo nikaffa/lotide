@@ -1,7 +1,6 @@
-// Taking in two arguments:array & callback function,
-// returns a new array based on the results of the callback function.
+// Taking in array & callback function, returns new array modified by callback
 
-const map = function(arr, callback) {
+const map = (arr, callback) => {
   const results = [];
   for (const item of arr) {
     results.push(callback(item));
@@ -35,22 +34,16 @@ const assertArraysEqual = (actual, expected) => {
 const words = ["ground", "control", "to", "major", "tom"];
 const expected = ['g', 'c', 't', 'm', 't'];
 const actual =  map(words, element => element[0]);
-// compares the results from map with expected array results
 assertArraysEqual(expected, actual);
 
 // Test case 2
-const words2 = ["round", "lontrol", "to", 1, 2];
-const expected2 = ['g', 'c', 't', 'm', 't'];
-const actual2 =  map(words2, element => element[0]);
-// compares the results from map with expected array results
+const words2 = [1, 2, 3];
+const expected2 = [2, 4, 6];
+const actual2 =  map(words2, element => element * 2);
 assertArraysEqual(expected2, actual2);
 
 // Test case 3
-const words3 = ["ground", "control", "to", "major", "tom"];
-const expected3 = ['G', 'C', 'T', 'M', 'T'];
-const actual3 =  map(words3, element => element[0]);
-// compares the results from map with expected array results
+const words3 = [5, 7, 23, 76];
+const expected3 = [10, 14, 46, 152];
+const actual3 =  map(words3, element => element + element);
 assertArraysEqual(expected3, actual3);
-
-
-
