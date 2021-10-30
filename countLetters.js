@@ -1,7 +1,7 @@
 // Given a sentence (as a string), returns an object contains a letter and a count of that letter in the sentence
 const countLetters = sentence => {
   const result = {};
-  for (let letter in sentence) {
+  for (let letter of sentence) {
     if (result[letter]) { //if already exists in result object,
       result[letter] ++; //increments its value
     } else {
@@ -10,7 +10,6 @@ const countLetters = sentence => {
   }
   return result;
 };
-
 
 //Test function: compares the two values and tells if they match or not.
 const assertEqual = (actual, expected) => {
@@ -21,8 +20,7 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-//TODO: compare two objs
-//Test case 1:
-const actual = countLetters('LHL');
-const expected = ({ 'L': 2, 'H': 1 });
-assertEqual(actual, expected);
+//Test cases:
+assertEqual(countLetters('LHL').H, 1);
+assertEqual(countLetters('hello').l, 2);
+assertEqual(countLetters('hi').l, undefined);
