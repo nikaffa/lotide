@@ -1,4 +1,4 @@
-//Takes in two arrays and returns true or false, based on a perfect match.
+//Test function: compares two arrays
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
@@ -11,7 +11,7 @@ const eqArrays = (arr1, arr2) => {
   return true;
 };
 
-//Test function: take in two arrays and console.log an appropriate message
+//Test function: logs a message based on callback's result
 const assertArraysEqual = (actual, expected) => {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
