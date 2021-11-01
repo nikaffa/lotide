@@ -6,11 +6,12 @@ let result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2);
 assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Labs");
+assertEqual(result[2], undefined);
 
 // Test Case 2:
 result = tail(["Hello"]);
-assertEqual(result.length, 1);
-assertEqual(result[1], "Lighthouse");
+assertEqual(result.length, 0);
+assertEqual(result[1], undefined);
 
 // Test Case 3:
 result = tail([]);
