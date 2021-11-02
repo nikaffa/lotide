@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@nikaffa/lotide",
   "version": "1.0.0",
-  "description": "A clone of the lodash JavaScript library",
-  "main": "head.js",
+  "description": "A mini clone of the [Lodash](https://lodash.com) JavaScript library",
+  "main": "README.md",
   "directories": {
     "test": "mocha"
   },
