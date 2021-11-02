@@ -7,6 +7,7 @@ const findKeyByValue = (object, value) => {
     }
   }
 };
+module.exports = findKeyByValue;
 
 // Test function: compares two values on equality
 const assertEqual = (actual, expected) => {

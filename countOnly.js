@@ -13,6 +13,7 @@ const countOnly = (allItems, itemsToCount) => {
   });
   return results;
 };
+module.exports = countOnly;
 
 //Test function: compares the two values and tells if they match or not.
 const assertEqual = (actual, expected) => {

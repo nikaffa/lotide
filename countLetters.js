@@ -11,6 +11,8 @@ const countLetters = sentence => {
   return result;
 };
 
+module.exports = countLetters;
+
 //Test function: compares the two values and tells if they match or not.
 const assertEqual = (actual, expected) => {
   if (actual === expected) {

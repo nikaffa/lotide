@@ -1,5 +1,4 @@
 // Taking in array & callback function, returns new array modified by callback
-
 const map = (arr, callback) => {
   const results = [];
   for (const item of arr) {
@@ -7,6 +6,8 @@ const map = (arr, callback) => {
   }
   return results;
 };
+
+module.exports = map;
 
 //Test: takes in two arrays and returns true or false, based on a perfect match.
 const eqArrays = (arr1, arr2) => {

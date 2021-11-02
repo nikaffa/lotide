@@ -10,6 +10,7 @@ const letterPositions = sentence => {
   }
   return result;
 };
+module.exports = letterPositions;
 
 //Test function: compares two arrays
 const eqArrays = (arr1, arr2) => {

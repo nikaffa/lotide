@@ -26,6 +26,7 @@ const eqObjects = (object1, object2) => {
   }
   return true;
 };
+module.exports = assertObjectsEqual;
 
 // Test cases:
 const obj1 = { a: "1", b: "2" };

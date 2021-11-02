@@ -10,6 +10,7 @@ const findKey = (object, callback) => {
   }
   return undefined;
 };
+module.exports = findKey;
 
 // Test: compares two values on equality
 const assertEqual = (actual, expected) => {

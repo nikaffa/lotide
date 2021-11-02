@@ -9,6 +9,9 @@ const takeUntil = (arr, callback) => {
   }
   return result;
 };
+
+module.exports = takeUntil;
+
 //Test function: compares two arrays
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {

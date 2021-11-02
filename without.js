@@ -9,6 +9,8 @@ const without = (source, itemsToRemove) => {
   return newArray;
 };
 
+module.exports = without;
+
 //Test function: takes in two arrays and returns true or false, based on a perfect match.
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {

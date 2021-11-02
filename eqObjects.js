@@ -38,6 +38,7 @@ const assertEqual = (actual, expected) => {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+module.exports = eqObjects;
 
 //Test cases:
 const obj1 = { a: "1", b: "2" };
